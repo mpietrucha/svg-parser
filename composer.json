@@ -1,11 +1,11 @@
 {
-    "name": "mpietrucha/:name",
-    "description": ":description",
+    "name": "mpietrucha/svg-parser",
+    "description": "Parses and replaces params fields in svg file",
     "type": "liblary",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Mpietrucha\\:vendor\\": "src/"
+            "Mpietrucha\\Svg\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mpietrucha\\:vendor\\:provider"
+                "Mpietrucha\\Svg\\:provider"
             ]
         }
     }
