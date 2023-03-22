@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.01 64.7">
+    <defs>
+        <linearGradient id="gradientBottomLeft" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#1fe51f" />
+            <stop offset="100%" stop-color="#3df6f5" />
+        </linearGradient>
+
+        <linearGradient id="gradientTopRight" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#3df6f5" />
+            <stop offset="100%" stop-color="#1fe51f" />
+        </linearGradient>
+
+        <linearGradient id="gradientCenter">
+            <stop offset="0%" stop-color="#1fe51f" />
+            <stop offset="100%" stop-color="#3df6f5" />
+        </linearGradient>
+    </defs>
+
+    <path d="m11.75,9.09s-.05,0-.08,0v3.29s.07,0,.11,0c2.42,0,3.96,2.13,3.96,4.32s-1.33,4.29-3.96,4.29-3.96-2.07-3.96-4.29c0-.05,0-.09.01-.14h-3.61s0,.09,0,.14c0,4.2,2.84,7.6,7.57,7.6s7.6-3.4,7.6-7.6-2.99-7.6-7.63-7.6Z" fill="param(o) param(letter) #141317" />
+    <path d="m22.41,21.06V5.71c0-3.9,2.63-5.71,5.56-5.71,1.27,0,2.6.41,3.79,1.18l-1.33,2.69c-.77-.5-1.48-.77-2.22-.77-1.24,0-2.19.83-2.19,2.6v.98h4.29v3.16h-4.29v11.21h-3.61Z" fill="param(f1) param(letter) #141317" />
+    <path d="m31.07,34.12v-15.35c0-3.9,2.63-5.71,5.56-5.71,1.27,0,2.6.41,3.79,1.18l-1.33,2.69c-.77-.5-1.48-.77-2.22-.77-1.24,0-2.19.83-2.19,2.6v.98h4.29v3.16h-4.29v11.21h-3.61Z" fill="param(f2) param(letter) #141317" />
+    <path d="m11.77,37.08c-1.04-.98-2.22-1.3-3.61-1.3-1.72,0-2.66.53-2.66,1.45s.86,1.48,2.72,1.6c2.75.18,6.24.8,6.24,4.67s-2.1,4.79-6.27,4.79c-2.31,0-4.61-.39-6.74-2.6l1.77-2.57c1.03,1.15,3.4,2.01,5.03,2.04,1.36.03,2.63-.68,2.63-1.75,0-1-.83-1.42-2.9-1.54-2.75-.21-6.03-1.21-6.03-4.52s3.49-4.56,6.15-4.56c2.28,0,3.99.45,5.68,1.92l-2.01,2.36Z" fill="param(s) param(letter) #141317" />
+    <rect x="18.49" y="43.15" width="3.61" height="21.55" fill="param(i) param(letter) #141317" />
+
+    <polygon points="3.61 56.29 0 56.29 0 61.09 0 64.7 3.61 64.7 8.41 64.7 8.41 61.09 3.61 61.09 3.61 56.29" fill="param(shapeBottomLeft) param(shape) url(#gradientBottomLeft)" />
+    <polygon points="49.4 .18 44.6 .18 44.6 3.79 49.4 3.79 49.4 8.59 53.01 8.59 53.01 3.79 53.01 .18 49.4 .18" fill="param(shapeTopRighe) param(shape) url(#gradientTopRight)" />
+
+    <rect x="16.68" y="30.58" width="3.61" height="4.07" fill="param(dot) param(shape) url(#gradientCenter)" />
+
+    <rect x="22.41" y="12.06" width="3.61" height="17.6" fill="param(f1) param(letter) #141317" />
+    <path d="m29.63,34.92v4.14h4.02v3.1h-4.05v6.3c0,1.39.77,2.07,1.89,2.07.56,0,1.21-.18,1.75-.44l1,3.08c-1.03.41-1.89.59-2.99.62-3.16.12-5.24-1.69-5.24-5.32v-13.16l3.61-.39Z" fill="param(t) param(letter) #141317" />
+    <path d="m40.88,43.68c.24,1.8,1.8,3.1,4.35,3.1,1.33,0,3.08-.5,3.9-1.36l2.31,2.28c-1.54,1.6-4.05,2.37-6.27,2.37-5.03,0-8.01-3.11-8.01-7.78s3.02-7.63,7.75-7.63,7.92,3.02,7.36,9.02h-11.39Zm7.92-2.99c-.24-1.89-1.71-2.84-3.79-2.84-1.95,0-3.55.94-4.08,2.84h7.87Z" fill="param(e) param(letter) #141317" />
+
+    <rect x="42.51" y="25.03" width="8.01" height="2.78" transform="translate(93.02 52.84) rotate(-180)" fill="param(dash) param(shape) url(#gradientCenter)" />
+</svg>
