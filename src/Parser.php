@@ -32,15 +32,6 @@ class Parser
         return self::create((string) $file->openFile());
     }
 
-    protected function buildParameters(): void
-    {
-        $parameters = $this->contents->toBetweenCollection(
-            $this->delimiters->startBeginning().$this->delimiters->start(), $this->delimiters->end()
-        )->toStringable();
-
-        $this->bags = $parameters->map(fn (Stringable $parameter) => Bag::create($this->delimiters)->build($parameter));
-    }
-
     public function set(string $parameter, string $value): self
     {
         $bagWithIndex = fn (Bag $bag) => Condition::create([$bag, $index = $bag->parameterIndex($parameter)])
@@ -57,5 +48,14 @@ class Parser
         $this->bags->each(fn (Bag $bag) => $this->contents = $this->contents->replace(...$bag->replace()));
 
         return $this->contents->toString();
+    }
+
+    protected function buildParameters(): void
+    {
+        $parameters = $this->contents->toBetweenCollection(
+            $this->delimiters->startBeginning().$this->delimiters->start(), $this->delimiters->end()
+        )->toStringable();
+
+        $this->bags = $parameters->map(fn (Stringable $parameter) => Bag::create($this->delimiters)->build($parameter));
     }
 }
