@@ -56,6 +56,6 @@ class Bag
             return [$this->full, $this->default ?? ''];
         }
 
-        return [$this->full->toString(), collect($this->sets)->values()->first()];
+        return [$this->full->toString(), collect($this->sets)->sortKeys()->values()->first()];
     }
 }
