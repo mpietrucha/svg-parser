@@ -9,10 +9,12 @@ use Illuminate\Support\Stringable;
 use Mpietrucha\Svg\Contracts\DelimitersInterface;
 use Mpietrucha\Svg\Delimiters;
 use Mpietrucha\Support\Condition;
+use Mpietrucha\Support\Concerns\HasInputFile;
 
 class Parser
 {
     use HasFactory;
+    use HasInputFile;
 
     protected Collection $bags;
 
@@ -25,11 +27,6 @@ class Parser
         $this->contents = str($contents);
 
         $this->buildParameters();
-    }
-
-    public static function file(SplFileInfo $file): self
-    {
-        return self::create((string) $file->openFile());
     }
 
     public function set(string $parameter, string $value): self
