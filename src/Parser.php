@@ -3,7 +3,7 @@
 namespace Mpietrucha\Svg;
 
 use Mpietrucha\Support\Concerns\HasFactory;
-use Mpietrucha\Macros\Bootstrapper;
+use Mpietrucha\Support\Macro;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Stringable;
 use Mpietrucha\Svg\Contracts\DelimitersInterface;
@@ -22,7 +22,7 @@ class Parser
 
     public function __construct(string $contents, protected DelimitersInterface $delimiters = new Delimiters)
     {
-        Bootstrapper::handle();
+        Macro::bootstrap();
 
         $this->contents = str($contents);
 
